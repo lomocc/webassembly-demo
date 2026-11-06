@@ -1,0 +1,19 @@
+{
+  "name": "webassembly-demo",
+  "version": "1.0.0",
+  "description": "webassembly demo",
+  "dependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-es2015": "^6.24.1",
+    "copy-webpack-plugin": "^4.3.1",
+    "html-webpack-plugin": "^2.30.1",
+    "webassembly": "^0.11.0",
+    "webpack": "^3.10.0"
+  },
+  "scripts": {
+    "build": "npm run 10-wasm && npm run 20-webpack",
+    "20-webpack": "webpack",
+    "10-wasm": "wa compile -o template/program.wasm template/program.c"
+  }
+}
